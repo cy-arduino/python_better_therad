@@ -20,7 +20,7 @@ Basically same as "threading.Thread". difference as following:
 * start(timeout=)
   * timeout(float, >=0): max execution time for this thread
   * modify thread name:
-    * `[ori name]_GThread_[date]`
+    * `[ori name]_GThread_[time]`
 
 ### new method:
 * terminate()
