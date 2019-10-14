@@ -36,10 +36,3 @@ Basically same as "threading.Thread". difference as following:
 * upload to pypi
 * add unit test
 * 
-
-
-# NOTE: 
-If you want a thread exit immediately when it's parent thread exit, you should set it thread as daemon thread.
-(This may cause some problem because the thread is not exit by itself)
-Otherwise, main thread will be block until all children thread finished or you should kill the main thread by `kill` in cmd line manually
-This is the original design of threading.Thread  
