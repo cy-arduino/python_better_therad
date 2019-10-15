@@ -19,7 +19,9 @@ thread asynchronously.
 
 
 ## install
-`pip install bthread`
+* `pip install bthread`
+* download from pypi:
+  * `https://pypi.org/project/bthread/#files`
 
 ## Usage
 Basically same as "threading.Thread". difference as following:
