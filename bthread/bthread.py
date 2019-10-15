@@ -6,9 +6,6 @@ import logging
 
 # A "BETTER" thread which support start(timeout=xxx) and terminate()
 class BThread(threading.Thread):
-    LOG_FMT = "%(asctime)s [%(levelname)s] " \
-              "%(filename)s:%(lineno)s %(name)s %(funcName)s() : %(message)s"
-
     def _process_timeout(self, timeout=None):
         ret = 0
 
@@ -40,7 +37,6 @@ class BThread(threading.Thread):
 
         self.setName(self.name + '_GThread_' + time.strftime("%Y%m%d-%H%M%S"))
 
-        logging.basicConfig(level=logging.WARNING, format=self.LOG_FMT)
         self._log = logging.getLogger(self.getName())
 
         # terminate this thread when sys.exit()

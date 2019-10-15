@@ -54,6 +54,10 @@ def test_set_timeout2():
 
 
 if __name__ == '__main__':
+    LOG_FMT = "%(asctime)s [%(levelname)s] " \
+              "%(filename)s:%(lineno)s %(name)s %(funcName)s() : %(message)s"
+    logging.basicConfig(level=logging.DEBUG, format=LOG_FMT)
+
     # test_terminate_thread_asyn()
     # test_start_with_timeout()
     # test_set_timeout1()
