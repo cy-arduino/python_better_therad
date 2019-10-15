@@ -43,7 +43,8 @@ Basically same as "threading.Thread". difference as following:
     * see https://docs.python.org/3/library/logging.html#levels
 
 ## TODO
-* pack this project
-* upload to pypi
 * add unit test
-* 
+* ~~pack this project~~
+* ~~upload to pypi~~
+
+
