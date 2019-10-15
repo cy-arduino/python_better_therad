@@ -26,8 +26,9 @@ Basically same as "threading.Thread". difference as following:
 * terminate()
   * terminate this thread
 * set_timeout(timeout)
+  * should be called before start()
   * set a max execution time for this thread
-* dbg()
+* dbg(level)
   * set debug level. Same as level in python's logging
     * see https://docs.python.org/3/library/logging.html#levels
 
